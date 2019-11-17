@@ -7,7 +7,7 @@ export default class NightClubs extends React.Component {
   }
   render() {
     const nightClubs = this.props.nightClubs;
-    console.log(nightClubs);
+    //console.log(nightClubs);
     return (
       <TouchableOpacity
         style={styles.nightClubs}

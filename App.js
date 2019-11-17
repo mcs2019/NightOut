@@ -2,6 +2,28 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from './components/Header';
 import NightClub from './components/NightClub';
+import { createStackNavigator } from 'react-navigation-stack';
+import NightClubs from './components/NightClub';
+import Welcome from './components/Welcome';
+import Clubs from './components/Clubs';
+import Profile from './components/Profile';
+import LogIn from './components/Login';
+import SignUp from './components/Profile';
+
+import * as firebase from 'firebase';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyD5OGGEKRFuKX9T-B3HUb9t1bo4HzWLyeI',
+  authDomain: 'nightout-bbfa7.firebaseapp.com',
+  databaseURL: 'https://nightout-bbfa7.firebaseio.com',
+  projectId: 'nightout-bbfa7',
+  storageBucket: 'nightout-bbfa7.appspot.com',
+  messagingSenderId: '360243177444',
+  appId: '1:360243177444:web:caf0c2c4976f145298c9f1',
+  measurementId: 'G-XRMTED077L',
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 class App extends React.Component {
   constructor() {
@@ -111,6 +133,16 @@ class App extends React.Component {
     );
   }
 }
+
+// const BigNavigator = createStackNavigator({
+//   Welcome: { screen: Welcome },
+//   Home: { screen: Home },
+//   Profile: { screen: Profile },
+//   LogIn: { screen: LogIn },
+//   SignUp: { screen: SignUpi },
+//   Clubs: { screen: Clubs },
+//   NightClubs: { screen: NightClubs },
+// });
 
 const styles = StyleSheet.create({
   container: {
