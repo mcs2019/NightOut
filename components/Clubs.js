@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
 import NightClubs from './NightClub';
+import { createStackNavigator } from 'react-navigation-stack';
 
 export default function Clubs(props) {
   return (

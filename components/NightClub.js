@@ -12,10 +12,10 @@ export default class NightClubs extends React.Component {
       <TouchableOpacity
         style={styles.nightClubs}
         style={styles.clubButton}
-        // onPress={props.addNewTodo}
+        //onPress={this.props.navigation.navigation('Clubs')}
       >
         {/* // onPress={() => this.props.toggleDone()} */}
-        <Text style={styles.clubButtonText}>Clubs/Bars</Text>
+        <Text style={styles.clubButtonText}></Text>
 
         <Text
         //   style={ }
@@ -50,3 +50,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
+
+// export default createStackNavigator({
+//   nightClubs: NightClubs,
+// });
